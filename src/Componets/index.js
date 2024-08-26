@@ -1,5 +1,5 @@
 import Brands from '../Pages/Brands/Brands';
-import CarSlider from './CarSlider/CarSlider';
+// import CarSlider from './CarSlider/CarSlider';
 import News from './News/News';
 import Programs from './Programs/Programs';
 import Videos from './Videos/Videos';
@@ -10,7 +10,6 @@ import SearchBar from './searchbox/Search';
 
 export{
     Brands,
-    CarSlider,
     News,
     Programs,
     Videos,

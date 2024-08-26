@@ -2,6 +2,7 @@ import React from 'react'
 import './Navbar.css'
 import SearchBar from '../searchbox/Search'
 import { useState } from 'react'
+import { Link } from 'react-router-dom'
 
 
 
@@ -21,10 +22,10 @@ const Navbar = () => {
     <div className='navbar'>
       <img src='./assets/arabgt.png' alt="arabgt" className="logo" />
       <div className="links">
-        <li><a href="/news">News</a></li>
-        <li><a href="/reviews">Reviews</a></li>
-        <li><a href="">Autotech</a></li>
-        <li><a href="/more">More</a></li>
+        <li><Link to="/news">News</Link></li>
+        <li><Link to="/reviews">Reviews</Link></li>
+        <li><Link to="">Autotech</Link></li>
+        <li><Link to="/more">More</Link></li>
       </div>
       <div className="left">
         <SearchBar/>

@@ -24,18 +24,18 @@ const CarSlider = () => {
         slidesContainerRef.current.style.transform = `translateX(${offset}px)`;
     }, [currentIndex, slideWidth]);
 
-    const showSlide = (index) => {
-        if (index >= allSlides.length - 1) {
-            setTimeout(() => setCurrentIndex(1), 500);
-            slidesContainerRef.current.style.transition = 'none';
-        } else if (index <= 0) {
-            setTimeout(() => setCurrentIndex(totalSlides), 500);
-            slidesContainerRef.current.style.transition = 'none';
-        } else {
-            setCurrentIndex(index);
-            slidesContainerRef.current.style.transition = 'transform 0.5s ease-in-out';
-        }
-    };
+    // const showSlide = (index) => {
+    //     if (index >= allSlides.length - 1) {
+    //         setTimeout(() => setCurrentIndex(1), 500);
+    //         slidesContainerRef.current.style.transition = 'none';
+    //     } else if (index <= 0) {
+    //         setTimeout(() => setCurrentIndex(totalSlides), 500);
+    //         slidesContainerRef.current.style.transition = 'none';
+    //     } else {
+    //         setCurrentIndex(index);
+    //         slidesContainerRef.current.style.transition = 'transform 0.5s ease-in-out';
+    //     }
+    // };
 
     const updatePagination = (index) => {
         setCurrentIndex(index);

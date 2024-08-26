@@ -1,6 +1,6 @@
 import React from "react";
 import "./Search.css";
-import { IoColorFill, IoSearchOutline } from "react-icons/io5";
+import { IoSearchOutline } from "react-icons/io5";
 
 const SearchBar = () => {
   return (

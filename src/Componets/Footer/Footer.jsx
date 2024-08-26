@@ -1,9 +1,8 @@
 import React from 'react'
 import './Footer.css'
 import { FaFacebookF } from "react-icons/fa6";
-import { FaLinkedinIn } from "react-icons/fa";
-import { FaInstagram } from "react-icons/fa";
-
+import { FaLinkedinIn, FaInstagram } from "react-icons/fa";
+import { Link } from 'react-router-dom';
 
 
 
@@ -23,9 +22,9 @@ const Footer = () => {
         <div class="social-media">
             <h2>Follow Us</h2>
             <div class="social-icons">
-                <a href="#"><FaFacebookF /></a>
-                <a href="#"><FaLinkedinIn /></a>
-                <a href="#"><FaInstagram/></a>
+                <Link to="#"><FaFacebookF /></Link>
+                <Link to="#"><FaLinkedinIn /></Link>
+                <Link to="#"><FaInstagram/></Link>
             </div>
         </div>
     </div>
