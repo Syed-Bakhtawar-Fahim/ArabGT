@@ -1,0 +1,52 @@
+# https://www.robotstxt.org/robotstxt.html
+User-agent: *
+Disallow:
+
+
+
+
+.videos {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    height: 100vh;
+    padding: 20px 0;
+}
+
+.vcontainer {
+    width: 90vw; /* Set the width to 90% of the viewport width */
+    margin: 0 auto; /* Center the container horizontally */
+}
+
+.slick-slider {
+    width: 90vw; /* Ensure the slider also takes up 90% of the viewport width */
+}
+
+.vcard {
+    width: 100%; /* Make sure the card takes up the full width of the container */
+    text-align: center;
+    margin: 20px 0;
+}
+
+.video-container {
+    width: 100%; /* The video container now takes the full width of the card */
+    height: auto; /* Let the height adjust based on the content (e.g., image) */
+    border: 3px solid rgba(124, 124, 124, 1);
+    border-radius: 20px;
+    overflow: hidden;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.video {
+    width: 100%; /* The image now takes up the full width of the video container */
+    height: auto; /* Maintain aspect ratio */
+    object-fit: cover;
+}
+
+.vtxt {
+    padding: 10px;
+    max-width: 100%;
+    text-align: center;
+}

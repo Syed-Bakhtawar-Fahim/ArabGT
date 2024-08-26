@@ -1,0 +1,96 @@
+.programs {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 2rem;
+    padding-top: 2rem;
+    width: 100%;
+}
+
+.pgridcontainer {
+    width: 85vw;
+}
+
+.p-title h2 {
+
+    margin-bottom: 30px;
+    font-family: "Montserrat", sans-serif;
+    font-size: 45px;
+    font-weight: 600;
+    text-align: center;
+    color: #333;
+}
+
+/* Grid styling */
+.p-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr; /* Two columns */
+    grid-template-rows: auto auto; /* Two rows */
+    gap: 40px;
+}
+
+/* First card spans the full row */
+.span-row {
+    grid-column: span 2;
+    background-size: cover;
+    background-position: center;
+    height: 600px; /* Adjust as needed */
+    display: flex;
+    align-items: flex-end; /* Align content at the bottom */
+    padding: 20px;
+    border-radius: 50px !important;
+    color: white; /* Text color */
+}
+
+/* Regular card styling */
+.p-card {
+    background-color: white;
+    text-align: left;
+    transition: transform 0.3s ease;
+    border-radius: 10px;
+    overflow: hidden;
+    position: relative;
+}
+
+.p-card:hover {
+    transform: translateY(-5px);
+}
+
+/* Image for non-first cards */
+.p-card-image {
+    width: 100%;
+    height: 350px;
+    border-radius: 30px;
+    overflow: hidden;
+}
+
+.p-card-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+
+/* Content for all cards */
+.p-card-content {
+    padding: 15px;
+}
+
+.programs .p-card-title  p {
+    font-size: 28px !important;
+    font-weight: 300;
+    color: #333;
+    margin: 0;
+}
+
+
+
+/* Title styling for the first card */
+.span-row h3 {
+    font-size: 40px;
+    width: 600px;
+    margin: 0;
+    
+    font-weight: 700;
+    text-shadow: 1px 1px 5px rgba(0, 0, 0, 0.7); /* Adds a shadow for readability */
+}

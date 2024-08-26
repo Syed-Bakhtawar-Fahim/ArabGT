@@ -1,0 +1,46 @@
+.agents{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    align-items: center;
+    height: 100vh;
+    width: 100%;
+    height: 350px;
+    height: 100vh;
+    
+  
+  }
+  .photo{
+    max-width: 100%;
+    max-height: 100%;
+    object-fit: cover;
+    overflow: hidden;
+    width: 500px;
+    flex-shrink: 1;
+    height: inherit;
+  }
+  .agents-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+    width: 90vw; /* Set the width to 90% of the viewport width */
+    margin: 0 auto; /* Center the container horizontally */
+    margin-top: 40px;
+}
+.acontainer{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 90%;
+    height: 340px;
+    border: rgba(124, 124, 124, 1) 3px solid;
+    border-radius: 50px;
+    margin: 20px;
+    overflow: hidden; 
+  }
+  .atxt{
+    padding-left: 40px;
+    max-width: 450px;
+    flex-shrink: 1;
+}

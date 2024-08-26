@@ -1,0 +1,105 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.news-title h2 {
+    font-family: "Montserrat", sans-serif;
+    margin-top: 100px;
+    font-size: 45px;
+    font-weight: 600;
+    margin-bottom: 60px;
+    text-align: center;
+    color: #333;
+}
+
+.news {
+    width: 100%;
+    padding: 20px;
+    margin-bottom: 2rem; /* Space at the bottom to prevent overlap */
+    margin-top: 20px;
+    overflow: hidden; /* Prevent content overflow */
+}
+
+.gridcontainer {
+    width: 95vw;
+    margin-bottom: 70px;
+}
+
+.grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+    gap: 50px; /* Space between the cards */
+    max-width: 1540px; /* Limits the grid width for 3 columns */
+    margin: 0 auto; /* Centers the grid within its container */
+}
+
+@media (max-width: 1200px) {
+    .grid {
+        grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+    }
+}
+
+@media (max-width: 768px) {
+    .grid {
+        grid-template-columns: repeat(auto-fit, minmax(350px, 1fr)); /* 1-2 columns for smaller screens */
+    }
+}
+
+@media (max-width: 500px) {
+    .grid {
+        grid-template-columns: 1fr; /* 1 column on very small screens */
+    }
+}
+
+.card {
+    background-color: white;
+    text-align: left;
+    transition: transform 0.3s ease; /* Smooth transform on hover */
+}
+
+.card:hover {
+    transform: translateY(-5px); /* Slight lift on hover */
+}
+
+.card-image {
+    width: 100%;
+    height: 200px;
+    border-radius: 10px;
+    overflow: hidden; /* Ensures the image doesn't overflow the container */
+}
+
+.card-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover; /* Ensures the image fits perfectly */
+}
+
+.card-content {
+    padding-top: 5px;
+}
+
+.card-date {
+    margin-bottom: 5px;
+    color: #777;
+    font-size: 12px;
+}
+
+.card-title h3 {
+    font-size: 14px;
+    font-weight: 700;
+    color: #333;
+    margin-bottom: 10px;
+}
+
+.card-description p {
+    font-size: 12px;
+    color: #555;
+}
+
+.news-btn {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}

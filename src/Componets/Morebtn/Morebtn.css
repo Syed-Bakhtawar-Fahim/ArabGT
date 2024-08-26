@@ -1,0 +1,16 @@
+.vm{
+    width: 150px;
+    height: 100%;
+    border: 2px solid rgba(226, 6, 44, 1);
+    border-radius: 15px;
+    
+    background-color: transparent;
+    color: rgba(226, 6, 44, 1);
+    padding: 15px 30px;
+    font-size: 16px;
+    font-weight: bold;
+    cursor: pointer;
+    
+
+	
+}
